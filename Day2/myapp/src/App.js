@@ -1,52 +1,77 @@
+
 import React from 'react';
 import './Assets/css/style.css';
-import './Assets/css/nav.css';
-
-function App() {
+; 
+const Navbar = () => {
   return (
-    <div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">signup</a>
-      </nav>
-
-      
-       
-
-        <div className="wrapper">
-          <div className="title-text">
-            <div className="title login">
-              LOGIN FORM
-            </div>
-          </div>
-          <div className="form-container">
-            <div className="form-inner">
-              <form action="#" className="login">
-                <div className="field">
-                  <input type="text" placeholder="Email Address" required />
-                </div>
-                <div className="field">
-                  <input type="password" placeholder="Password" required />
-                </div>
-                <div className="pass-link">
-                  <a href="#">Forgot password?</a>
-                </div>
-                <div className="field btn">
-                  <div className="btn-layer"></div>
-                  <input type="submit" value="Login" />
-                </div>
-                <div className="signup-link">
-                  Not a member? <a href="">Signup now</a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-   
+    <nav className="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
   );
-}
+};
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <p>                                             &copy; 2023 Your Website Name. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="app">
+      <Navbar />
+      <div className="content">
+        <h1>WELCOME TO THE WEBSITE</h1>
+        <p>This is the main content of your website.</p>
+      </div>
+      <Footer />
+    </div>
+    
+    
+  );
+};
 
 export default App;
+import React from 'react';
+import './CodePenEffect.css'; // Import your CSS file if you have one
+
+class CodePenEffect extends App {
+  render() {
+    return (
+      <div className="codepen-effect">
+        {
+          <div class="fire-wrapper">
+  <img class="fire" src="https://www.stivaliserna.com/assets/rocket/fire.svg" />
+</div>
+
+<div class="rain rain1"></div>
+<div class="rain rain2">
+  <div class="drop drop2"></div>
+</div>
+<div class="rain rain3"></div>
+<div class="rain rain4"></div>
+<div class="rain rain5">
+  <div class="drop drop5"></div>
+</div>
+<div class="rain rain6"></div>
+<div class="rain rain7"></div>
+<div class="rain rain8">
+  <div class="drop drop8"></div>
+</div>
+<div class="rain rain9"></div>
+<div class="rain rain10"></div>
+<div class="drop drop11"></div>
+<div class="drop drop12"></div>
+<div id="canvas"></div>
+}
+      </div>
+    );
+  }
+}
+
+export default CodePenEffect;
