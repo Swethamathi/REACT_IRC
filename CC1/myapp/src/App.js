@@ -1,29 +1,24 @@
-// import logo from "./logo.svg";
-// import Login from "./pages/Login";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import Dashboard from "./pages/Dashboard"
-// import Homepage from './Components/Homepage.js';
-// import './assets/css/Homepage.css';
+import React from 'react';
+import Navbar from './Components/nav.js';
 import Home from './Components/Home.js';
-import "./assets/css/Home.css";
-// import Grid from './Components/grid.js';
-// import gridData from './data';
-// import  './assets/css/grid.css';
+import Log from './Components/Log.js';
+import Register from './Components/Register.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import './Assets/css//nav.css';  // Corrected import statement
+
 function App() {
   return (
     <>
-     <div>
-     {/* <BrowserRouter>
-    //     <Route exact path="/login" component={Login} />
-		// <Route exact path="/" component={Dashboard} />
-    //   </BrowserRouter> */}
-      {/* <Homepage/> */}
-      <Home/> 
-      {/* <Grid/> */}
-    </div>
-       </>
-      )
-    }
-    
-    export default App;
- 
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Log" element={<Log />} />
+          <Route path="/Register" element={<Register />} />
+        </Routes>
+      </Router>
+    </>
+  );
+}
+
+export default App;

@@ -1,0 +1,92 @@
+.navbar {
+    
+  display: flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style:normal;
+  font-weight : 100px;
+  background :#212121;
+  padding: 15px 0;
+  justify-content: end;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+  margin: 0 10px;
+}
+
+.nav-link {
+  color:white;
+  text-decoration:solid;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color:rgb(7, 7, 7);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  background:#212121;
+  color: #fff;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+/* Style for the navigation bar */
+ul.navbar {
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-color: #efdfdf;
+    overflow: hidden;
+    height: 70px;
+    /* text-align: center; */
+  }
+
+  /* Style for the navigation bar links */
+  ul.navbar li {
+    float: left;
+  }
+
+  ul.navbar li  {
+    display: block;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Reduce the margin between navigation bar items */
+  ul.navbar li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  /* Change color on hover */
+  ul.navbar li :hover {
+    background-color: #494949;
+    color: rgb(235, 230, 230);
+  }
