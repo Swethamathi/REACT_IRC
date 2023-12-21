@@ -4,6 +4,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.0",
     "@mui/material": "^5.15.0",
+    "@mui/matwrial": "file:emotion/react@emotion/styled",
     "@mui/styled-engine-sc": "^6.0.0-alpha.8",
     "create-react-app": "^5.0.1",
     "myapp": "^0.0.0-1",
